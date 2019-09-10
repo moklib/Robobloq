@@ -1,5 +1,5 @@
 #include "RB_RGBLED.h"
-RB_RGBLed RGBLED(37,2);
+RB_RGBLed RGBLED(RGB_LED_Pin,2);
 void setup() {
   // put your setup code here, to run once:
    RGBLED.setColor(1,50,0,0);

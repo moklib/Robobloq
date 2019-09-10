@@ -117,10 +117,24 @@ uint8_t RB_TempAndHumi::GetHumidity(void)
 	return Humidity;
 	
 }
-
+uint8_t RB_TempAndHumi::GetHumidity_2(void)
+{       
+	Update();
+	delay(400);
+	return Humidity;
+	
+}
 
 uint8_t RB_TempAndHumi::GetTemperature(void)
 {
+	return Temperature;
+}
+
+
+uint8_t RB_TempAndHumi::GetTemperature_2(void)
+{        
+	Update();
+	delay(400);
 	return Temperature;
 }
 
